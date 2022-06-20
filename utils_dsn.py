@@ -162,7 +162,7 @@ class InternalClassifier(nn.Module):
                 self.quan_layer_branch = quan_Linear(self.branch_linearshape, num_classes)
                 self.branch_channels = [16, 64, 32]
                 self.branch_layer=nn.Sequential(
-                    nn.MaxPool2d(2, stride=2),
+                    # nn.MaxPool2d(2, stride=2),
                     quan_Conv2d(self.output_channels, 
                     self.branch_channels[1], kernel_size=5,
                     stride=1, padding=2),
