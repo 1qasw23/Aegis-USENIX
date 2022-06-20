@@ -420,7 +420,7 @@ def main():
                 print("attack start")
                 #checkpoint = torch.load('./save/cifar100_vgg16_quan_200_SGD_binarized/model_best.pth.tar')#checkpoint_branch.pth.tar#model_best_def.pth.tar
                 
-                checkpoint = torch.load('./save_finetune/cifar100_vgg16_quan_100_SGD_binarized/model_best.pth.tar')#checkpoint_branch.pth.tar#model_best_def.pth.tar
+                checkpoint = torch.load('./save_finetune/cifar100_vgg16_quan_80_SGD_binarized/model_best.pth.tar')#checkpoint_branch.pth.tar#model_best_def.pth.tar
             else:
                 print("no attack")
                 checkpoint = torch.load('./save/cifar100_vgg16_quan_200_SGD_binarized/model_best.pth.tar')#checkpoint_branch.pth.tar#model_best_def.pth.tar
